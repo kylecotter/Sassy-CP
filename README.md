@@ -9,6 +9,13 @@ Installation
 * Navigate to themes/cp_themes/default/css
 * Add override.css to css folder
 
+Screenshots
+___________
+
+http://cl.ly/BXG1 
+http://cl.ly/BXqX
+http://d.pr/yL85
+
 Credits
 -------
 
