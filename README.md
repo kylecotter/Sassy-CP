@@ -27,6 +27,15 @@ Screenshots
 * Template Manager - http://d.pr/QPVj
 * Edit Channel Entries Page -http://d.pr/X8X4
 
+Changelog
+-------
+* v1.2.0 - Added a login.css for the main admin login screen. Enhancements on the category page, various modals, and tweaks for ExpressionEngine 2.4 compatibility.
+* v1.1.0 - Converted from override to a CP theme. Replaced pink images, and tweaked other styles.
+* v1.0.3 - Bug fixes.
+*  v1.0.2 - Bug fixes.
+*  v1.0.1 - Bug fixes.
+*  v1.0.0 - Initial Release
+
 Credits
 -------
 
