@@ -1,0 +1,201 @@
+/*
+
+Theme: Sassy CP
+Description: An override for the ExpressionEngine Control Panel. It makes it prettier. And Sassy-ier.
+Version: 2.0.0
+Author: Cotter Interactive
+Legal: © 2012 Cotter Interactive.
+
+*/
+.clearfix, #navigationTabs {
+  zoom: 1;
+}
+.clearfix:before, #navigationTabs:before, .clearfix:after, #navigationTabs:after {
+  content: "";
+  display: table;
+}
+.clearfix:after, #navigationTabs:after {
+  clear: both;
+}
+
+#branding {
+  display: none;
+}
+
+#breadCrumb {
+  border-bottom: 1px solid #e5e5e5 !important;
+  padding: 0px !important;
+}
+#breadCrumb ol li {
+  background: #ecf1f4 url("../images/cp_sprite.png") right -94px no-repeat !important;
+  font-size: 11px !important;
+  line-height: 22px;
+  padding-right: 30px !important;
+}
+#breadCrumb ol li.last {
+  color: #2c3131 !important;
+}
+#breadCrumb ol li.last:after {
+  display: none;
+}
+#breadCrumb ol li a {
+  color: #80aa4f !important;
+}
+
+#activeUser {
+  background: #80aa4f !important;
+  line-height: 20px !important;
+}
+#activeUser a {
+  color: white !important;
+  text-transform: uppercase !important;
+  font-size: 10px !important;
+}
+#activeUser a.logOutButton {
+  text-transform: capitalize !important;
+}
+
+#sideBar li a:link, #sideBar li a:visited {
+  color: #80aa4f !important;
+  border-bottom: none;
+}
+
+#notePad {
+  display: none !important;
+}
+
+#search {
+  display: none !important;
+}
+
+.create h2, .modify h2, .view h2 {
+  background: none !important;
+}
+
+.contentMenu {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) !important;
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5) !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -ms-border-radius: 2px !important;
+  -o-border-radius: 2px !important;
+  border-radius: 2px !important;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.contentMenu .heading {
+  background: #859aa5 !important;
+  -moz-border-radius-topleft: 2px !important;
+  -webkit-border-top-left-radius: 2px !important;
+  border-top-left-radius: 2px !important;
+  -moz-border-radius-topright: 2px !important;
+  -webkit-border-top-right-radius: 2px !important;
+  border-top-right-radius: 2px !important;
+  -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5) !important;
+  -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5) !important;
+  border: 1px solid #69818f !important;
+  margin: -1px -1px 0 -1px !important;
+  -webkit-background-clip: padding;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+.contentMenu .heading h2 {
+  font-size: 18px !important;
+  padding: 8px !important;
+  text-shadow: black 0 -1px 0;
+}
+.contentMenu .heading h2 span {
+  font-size: 14px;
+}
+.contentMenu ul {
+  -moz-border-radius-bottomleft: 2px !important;
+  -webkit-border-bottom-left-radius: 2px !important;
+  border-bottom-left-radius: 2px !important;
+  -moz-border-radius-bottomright: 2px !important;
+  -webkit-border-bottom-right-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
+}
+.contentMenu ul li:first-child a {
+  border-top: none !important;
+}
+.contentMenu ul li a {
+  color: #5e7480 !important;
+}
+
+#mainMenu {
+  background: #27343c;
+}
+
+#navigationTabs {
+  margin-top: 0;
+  padding: 10px 0;
+}
+#navigationTabs > li {
+  margin: 0 5px;
+}
+#navigationTabs > li > a {
+  background: #31414b !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -ms-border-radius: 2px !important;
+  -o-border-radius: 2px !important;
+  border-radius: 2px !important;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 10px rgba(87, 87, 87, 0.7);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 10px rgba(87, 87, 87, 0.7);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 10px rgba(87, 87, 87, 0.7);
+  color: white !important;
+  margin: 0 0 0px 0 !important;
+  padding: 4px 4px 4px 8px !important;
+}
+#navigationTabs > li > a:hover {
+  background: #3b4e5a !important;
+  color: white !important;
+}
+#navigationTabs > li > a.addTab {
+  background: none !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #80aa4f !important;
+}
+#navigationTabs > li.home a, #navigationTabs > li.msm_sites a, #navigationTabs > li a[rel=external] {
+  padding-right: 8px !important;
+}
+#navigationTabs > li.parent > a:after, #navigationTabs > li.parent:focus > a:after, #navigationTabs > li.parent.active > a:after {
+  border: none;
+  content: "▼";
+  color: #496170 !important;
+  display: inline;
+  font-size: 8px;
+  margin-left: 4px;
+  position: relative;
+  top: -1px;
+}
+#navigationTabs > li > ul {
+  margin-top: 6px !important;
+}
+#navigationTabs > li ul, #navigationTabs > li ul ul {
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -ms-border-radius: 2px !important;
+  -o-border-radius: 2px !important;
+  border-radius: 2px !important;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#navigationTabs li li.hover,
+#navigationTabs ul li li.hover, #navigationTabs li li.parent:focus,
+#navigationTabs li li.parent.active, #navigationTabs li li.parent:focus > a,
+#navigationTabs li li.parent.active > a {
+  background: #80aa4f !important;
+}
+
+#navigationTabs li li.parent:focus > a:after,
+#navigationTabs li li.parent.active > a:after {
+  border-left: 10px solid #80aa4f;
+}

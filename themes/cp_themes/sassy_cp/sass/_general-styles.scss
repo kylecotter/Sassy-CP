@@ -1,0 +1,122 @@
+// Where the magic happens
+
+// Your guess on what the heck this thing is, is just as good as mine.
+
+#branding {
+	display: none;
+}
+
+// Bradcrumbs
+
+#breadCrumb {
+	border-bottom: 1px solid $offWhite !important;
+	padding: 0px !important;
+
+	ol {
+		li {
+			background: #ECF1F4 url('../images/cp_sprite.png') right -94px no-repeat !important;
+			font-size: 11px !important;
+			line-height: 22px;
+			padding-right: 30px !important;
+	
+			&.last {
+				color: $darkGrey !important;
+					
+				&:after {
+					display: none;
+				}
+			}
+								
+			a {
+				color: $primaryColor !important;
+			}
+		}
+	}
+}
+
+// Active User - Same line as Bradcrumbs
+
+#activeUser {
+	background: $primaryColor !important;
+	line-height: 20px !important;
+		
+	a {
+		color: $white !important;
+		text-transform: uppercase !important;
+		font-size: 10px !important;
+			
+		&.logOutButton {
+			text-transform: capitalize !important;
+		}
+	}
+}
+
+// Sidebar Tweaks
+
+#sideBar li a:link, #sideBar li a:visited {
+	color: $primaryColor !important;
+	border-bottom: none;
+}
+	
+@if $showNotepad == false {
+	#notePad {
+		display: none !important;
+	}
+}
+
+@if $showSearch == false {
+	#search {
+		display: none !important;
+	}
+}
+
+@if $showQuickLinks == false {
+	#quickLinks {
+		display: none !important;
+	}
+}
+
+// Homepage "Widgets"
+
+.create h2, .modify h2, .view h2 {
+	background: none !important;
+}
+
+.contentMenu {
+	@include box-shadow(0px 1px 3px rgba(000,000,000,0.5) !important);
+	@include border-radius(2px !important);
+	@include background-clip();
+	
+	.heading {
+		background: lighten($primaryGrey, 15%) !important;
+		@include border-top-radius(2px !important);
+		@include box-shadow(0px 1px 6px rgba(000,000,000,0.5) !important);
+		border: 1px solid lighten($primaryGrey, 5%) !important;
+		margin: -1px -1px 0 -1px !important;
+		@include background-clip();
+		
+		h2 {
+			font-size: 18px !important;
+			padding: 8px !important;
+			@include text-shadow(#000 0 -1px 0);
+			
+			span {
+				font-size: 14px;
+			}
+		}
+	}
+	
+	ul {
+		@include border-bottom-radius(2px !important);
+		
+		li:first-child a {
+			border-top: none !important;
+		}
+		
+		li {
+			a {
+				color: $primaryGrey !important;
+			}
+		}
+	}
+}
