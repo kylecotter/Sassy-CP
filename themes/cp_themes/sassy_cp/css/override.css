@@ -39,11 +39,11 @@ Legal: © 2012 Cotter Interactive.
   display: none;
 }
 #breadCrumb ol li a {
-  color: #80aa4f !important;
+  color: #0393c5 !important;
 }
 
 #activeUser {
-  background: #80aa4f !important;
+  background: #0393c5 !important;
   line-height: 20px !important;
 }
 #activeUser a {
@@ -55,8 +55,17 @@ Legal: © 2012 Cotter Interactive.
   text-transform: capitalize !important;
 }
 
+#siteLogo a {
+  color: #0393c5 !important;
+}
+
+#sidebarControl a {
+  color: #2c3131 !important;
+  text-decoration: none !important;
+}
+
 #sideBar li a:link, #sideBar li a:visited {
-  color: #80aa4f !important;
+  color: #0393c5 !important;
   border-bottom: none;
 }
 
@@ -96,6 +105,9 @@ Legal: © 2012 Cotter Interactive.
   -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5) !important;
   -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5) !important;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.5) !important;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  box-sizing: border-box !important;
   border: 1px solid #69818f !important;
   margin: -1px -1px 0 -1px !important;
   -webkit-background-clip: padding;
@@ -110,7 +122,7 @@ Legal: © 2012 Cotter Interactive.
 .contentMenu .heading h2 span {
   font-size: 14px;
 }
-.contentMenu ul {
+.contentMenu > ul {
   -moz-border-radius-bottomleft: 2px !important;
   -webkit-border-bottom-left-radius: 2px !important;
   border-bottom-left-radius: 2px !important;
@@ -118,11 +130,131 @@ Legal: © 2012 Cotter Interactive.
   -webkit-border-bottom-right-radius: 2px !important;
   border-bottom-right-radius: 2px !important;
 }
-.contentMenu ul li:first-child a {
+.contentMenu > ul li:first-child a {
   border-top: none !important;
 }
-.contentMenu ul li a {
-  color: #5e7480 !important;
+.contentMenu > ul li a {
+  color: #243038 !important;
+}
+.contentMenu > ul ul {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  -ms-border-radius: 0px !important;
+  -o-border-radius: 0px !important;
+  border-radius: 0px !important;
+}
+.contentMenu > ul ul li a {
+  font-weight: normal !important;
+  line-height: 12px !important;
+  font-size: 12px !important;
+}
+.contentMenu > ul ul li a:hover {
+  color: #0393c5 !important;
+}
+
+#accessoryTabs {
+  border-top: 1px solid #e5e5e5 !important;
+  margin-left: 0px !important;
+}
+#accessoryTabs:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+#accessoryTabs ul li {
+  background: none !important;
+  border-left: 1px solid #e5e5e5 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  padding: 0 12px !important;
+}
+#accessoryTabs ul li.current {
+  background: #243038 !important;
+}
+#accessoryTabs ul li:first-child {
+  margin-left: 40px !important;
+}
+#accessoryTabs ul li:last-child {
+  border-right: 1px solid #e5e5e5 !important;
+}
+#accessoryTabs ul li a {
+  color: #0393c5 !important;
+  font-weight: bold !important;
+  font-size: 11px !important;
+  padding: 6px 0 !important;
+  text-shadow: none !important;
+}
+#accessoryTabs ul li a span.accessoryHandle {
+  background: none !important;
+}
+
+input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04b8f7), color-stop(100%, #025b7a)) !important;
+  background: -webkit-linear-gradient(top, #04b8f7, #025b7a) !important;
+  background: -moz-linear-gradient(top, #04b8f7, #025b7a) !important;
+  background: -o-linear-gradient(top, #04b8f7, #025b7a) !important;
+  background: linear-gradient(top, #04b8f7, #025b7a) !important;
+  border: 1px solid #025f7f !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -ms-border-radius: 2px !important;
+  -o-border-radius: 2px !important;
+  border-radius: 2px !important;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 4px rgba(87, 87, 87, 0.7);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 4px rgba(87, 87, 87, 0.7);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 4px rgba(87, 87, 87, 0.7);
+  color: white !important;
+  margin: 0 auto;
+  padding: 5px 20px;
+  text-align: center;
+}
+input.submit:hover, input#edit_file:hover, input#edit_image:hover, button[type="button"]:hover, a#edit_file:hover, a#edit_image:hover, a.submit:hover {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0393c5), color-stop(100%, #0393c5)) !important;
+  background: -webkit-linear-gradient(top, #0393c5, #0393c5) !important;
+  background: -moz-linear-gradient(top, #0393c5, #0393c5) !important;
+  background: -o-linear-gradient(top, #0393c5, #0393c5) !important;
+  background: linear-gradient(top, #0393c5, #0393c5) !important;
+  text-decoration: none !important;
+}
+
+.button .submit, #action_nav li a:link, #action_nav li a:visited, #tools .submit, #noticeContents .submit, .cp_button a {
+  background: white;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #cccccc)) !important;
+  background: -webkit-linear-gradient(top, #ffffff, #cccccc) !important;
+  background: -moz-linear-gradient(top, #ffffff, #cccccc) !important;
+  background: -o-linear-gradient(top, #ffffff, #cccccc) !important;
+  background: linear-gradient(top, #ffffff, #cccccc) !important;
+  border: 1px solid #dbdbdb !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -ms-border-radius: 2px !important;
+  -o-border-radius: 2px !important;
+  border-radius: 2px !important;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  color: #243038 !important;
+  font-size: 11px;
+  margin: 0 auto;
+  padding: 3px 7px;
+  text-align: center;
+  text-decoration: none;
+}
+.button .submit:hover, #action_nav li a:link:hover, #action_nav li a:visited:hover, #tools .submit:hover, #noticeContents .submit:hover, .cp_button a:hover {
+  background: white !important;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background: -o-linear-gradient(top, #ffffff, #ffffff);
+  background: linear-gradient(top, #ffffff, #ffffff);
+  text-decoration: none !important;
 }
 
 #mainMenu {
@@ -159,7 +291,7 @@ Legal: © 2012 Cotter Interactive.
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  color: #80aa4f !important;
+  color: #0393c5 !important;
 }
 #navigationTabs > li.home a, #navigationTabs > li.msm_sites a, #navigationTabs > li a[rel=external] {
   padding-right: 8px !important;
@@ -192,10 +324,10 @@ Legal: © 2012 Cotter Interactive.
 #navigationTabs ul li li.hover, #navigationTabs li li.parent:focus,
 #navigationTabs li li.parent.active, #navigationTabs li li.parent:focus > a,
 #navigationTabs li li.parent.active > a {
-  background: #80aa4f !important;
+  background: #0393c5 !important;
 }
 
 #navigationTabs li li.parent:focus > a:after,
 #navigationTabs li li.parent.active > a:after {
-  border-left: 10px solid #80aa4f;
+  border-left: 10px solid #0393c5;
 }

@@ -1,0 +1,39 @@
+// All the submmity actiony buttonz should look like this
+
+input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit {
+	@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 15%)) !important);
+	border: 1px solid darken($primaryColor, 14%) !important;
+	@include border-radius(2px !important);
+	@include box-shadow(0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 4px rgba(087,087,087,0.7));
+	color: $white !important;
+	margin: 0 auto;
+	padding: 5px 20px;
+	text-align: center;
+
+	 &:hover {
+	 	@include background(linear-gradient(top, lighten($primaryColor, .01%), $primaryColor) !important);
+		text-decoration: none !important;
+	}
+}
+
+// All the secondary non-submitty buttons are this nice grey
+
+.button .submit, #action_nav li a:link, #action_nav li a:visited, #tools .submit, #noticeContents .submit, .cp_button a {
+	background: $white;
+	@include background(linear-gradient(top, $white, darken($white, 20%)) !important);
+	border: 1px solid darken($white, 14%) !important;
+ 	@include border-radius(2px !important);
+	@include box-shadow(0px 1px 1px rgba(000,000,000,0.5));
+	color: $nearBlack !important;
+	font-size: 11px;
+	margin: 0 auto;
+	padding: 3px 7px;
+	text-align: center;
+	text-decoration: none;
+	
+	&:hover {
+		background: lighten($white, .01%) !important;
+	   @include background(linear-gradient(top, lighten($white, .01%), $white));
+	   text-decoration: none !important;
+	}
+}

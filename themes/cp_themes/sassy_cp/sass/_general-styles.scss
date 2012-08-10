@@ -53,6 +53,15 @@
 
 // Sidebar Tweaks
 
+#siteLogo a {
+	color: $primaryColor !important;
+}
+
+#sidebarControl a {
+	color: $darkGrey !important;
+	text-decoration: none !important;
+}
+
 #sideBar li a:link, #sideBar li a:visited {
 	color: $primaryColor !important;
 	border-bottom: none;
@@ -91,6 +100,7 @@
 		background: lighten($primaryGrey, 15%) !important;
 		@include border-top-radius(2px !important);
 		@include box-shadow(0px 1px 6px rgba(000,000,000,0.5) !important);
+		@include box-sizing(border-box !important);
 		border: 1px solid lighten($primaryGrey, 5%) !important;
 		margin: -1px -1px 0 -1px !important;
 		@include background-clip();
@@ -106,7 +116,7 @@
 		}
 	}
 	
-	ul {
+	> ul {
 		@include border-bottom-radius(2px !important);
 		
 		li:first-child a {
@@ -115,7 +125,73 @@
 		
 		li {
 			a {
-				color: $primaryGrey !important;
+				color: $nearBlack !important;
+			}
+		}
+
+		ul {
+			@include border-radius(0px !important);
+
+			li a {
+				font-weight: normal !important;
+				line-height: 12px !important;
+				font-size: 12px !important;
+
+				&:hover {
+					color: $primaryColor !important;
+				}
+			}
+		}
+	}
+}
+
+// Accessory Tab
+
+#accessoryTabs {
+
+	border-top: 1px solid $offWhite !important;
+	margin-left: 0px !important;
+		
+		&:after {
+			visibility: hidden;
+			display: block;
+			font-size: 0;
+			content: " ";
+			clear: both;
+			height: 0;
+		}
+		
+	ul {
+	
+		li {
+			background: none !important;
+			border-left: 1px solid $offWhite !important;
+			@include border-radius(0 !important);
+			margin: 0 !important;
+			padding: 0 12px !important;
+			
+			&.current {
+				background: $nearBlack !important;
+			}
+			
+			&:first-child {
+				margin-left: 40px !important;
+			}
+
+			&:last-child {
+				border-right: 1px solid $offWhite !important;
+			}
+			
+			a {
+				color: $primaryColor !important;
+				font-weight: bold !important;
+				font-size: 11px !important;
+				padding: 6px 0 !important;
+				text-shadow: none !important;
+			}
+			
+			a span.accessoryHandle {
+				background: none !important;
 			}
 		}
 	}
