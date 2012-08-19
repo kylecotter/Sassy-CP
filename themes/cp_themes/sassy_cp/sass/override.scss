@@ -1,0 +1,39 @@
+/*
+
+Theme: Sassy CP
+Description: An override for the ExpressionEngine Control Panel. It makes it prettier. And Sassy-ier.
+Version: 2.0.0
+Author: Cotter Interactive
+Legal: © 2012 Cotter Interactive.
+
+*/
+
+// Import Compass CSS Library
+@import "compass";
+
+// Import Configuration Variables
+@import "config";
+
+// Import Mixins
+@import "mixins";
+
+// Import Functions
+@import "functions";
+
+// Import Extends
+@import "extends";
+
+// Import General Styling - Where the meat is
+@import "general-styles";
+
+// Import UI Tweaks Styling
+@import "ui-tweaks";
+
+// Import Nav Styling
+@import "nav";
+
+// Import Publish Page Styling
+@import "publish-page";
+
+// Import Table Styling
+@import "tables";

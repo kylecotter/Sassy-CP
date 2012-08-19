@@ -1,0 +1,39 @@
+// ### Configuration File ###
+// This file is where the bulk of the cuztomizations enabled by 
+// Sassy CP come in to play. Edit any of the variables in this
+// file to change the CP to your needs.
+
+// ## De-Pink Me ##
+// This variable replaces all instances of pink in the control
+// panel, with the exception of images. Variations of this color
+// for gradients are automatically generated. The default color is
+// a nice green. #80AA4F to be exact.
+
+$primaryColor : #0393C5;
+
+// Navigation Colors
+$mainNavBg : #27343C;
+$mainNavLinkBg : #31414B;
+$mainNavLink : #fff;
+
+
+// Header Colors
+$primaryGrey : #5E7480;
+
+// Accent Colors
+$white : #fff;
+$black : #000;
+$offWhite : #E5E5E5;
+$darkGrey : #2C3131;
+$nearBlack : #243038;
+
+//Settings
+
+// Display the Notepad in the sidebar? (true|false)
+$showNotepad : false;
+
+// Display the Searchbar in the sidebar? (true|false)
+$showSearch : false;
+
+// Display the Quicklinks section in the sidebar? (true|false)
+$showQuickLinks : true;

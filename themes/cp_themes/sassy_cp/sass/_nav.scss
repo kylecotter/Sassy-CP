@@ -1,0 +1,76 @@
+// Fixing the wonderful navigation
+
+#mainMenu {
+	background: $mainNavBg;
+}
+
+#navigationTabs {
+	@extend .clearfix;
+	margin-top: 0;
+	padding: 10px 0;
+
+	// Styling of main top level nav
+	> li {
+		margin: 0 5px;
+
+		> a {
+			background: $mainNavLinkBg !important;
+			@include border-radius(2px !important);
+			@include box-shadow(0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 10px rgba(087,087,087,0.7));
+			color: $mainNavLink !important;
+			margin: 0 0 0px 0 !important;
+			padding: 4px 4px 4px 8px !important;
+
+			&:hover {
+				background: lighten($mainNavLinkBg, 5%) !important;
+				color: $mainNavLink !important;
+			}
+
+			&.addTab {
+				background: none !important;
+				@include box-shadow(none);
+				color: $primaryColor !important;
+			}
+		}
+
+		&.home a, &.msm_sites a, a[rel=external] {
+			padding-right: 8px !important;
+		}
+	}
+
+	// Styling of main top style nav with dropdown
+	> li.parent > a:after, > li.parent:focus > a:after, > li.parent.active > a:after {
+		border: none;
+		content: "▼";
+		color: lighten($mainNavLinkBg, 12%) !important;
+		display: inline;
+		font-size: 8px;
+		margin-left: 4px;
+		position: relative;
+		top: -1px;
+	}
+
+	//Styling the dropdowns
+	> li > ul {
+		margin-top: 6px !important;
+	}
+
+	> li ul, > li ul ul {
+		@include border-radius(2px !important);
+		@include box-shadow(0px 1px 3px rgba(000,000,000,0.5));
+	}
+}
+
+// The hover nightmare 
+
+#navigationTabs li li.hover,
+#navigationTabs ul li li.hover, #navigationTabs li li.parent:focus, 
+#navigationTabs li li.parent.active, #navigationTabs li li.parent:focus > a,
+#navigationTabs li li.parent.active > a {
+	background: $primaryColor !important;
+}
+
+#navigationTabs li li.parent:focus > a:after,
+#navigationTabs li li.parent.active > a:after {
+	border-left: 10px solid $primaryColor;
+}
