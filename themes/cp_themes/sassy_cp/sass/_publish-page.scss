@@ -207,7 +207,7 @@
 	}
 }
 
-#mainContent .content_tab {
+#mainContent .pageContents .content_tab, #mainContent .pageContents #tab_menu_tabs li.content_tab {
 	a {
 		&:hover {
 			color: $primaryColor !important;
@@ -215,7 +215,7 @@
 	}
 }
 
-#mainContent .current {
+#mainContent .pageContents .current {
 	a {
 		color: $nearBlack !important;
 

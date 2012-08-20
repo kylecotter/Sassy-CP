@@ -38,7 +38,7 @@
 	}
 }
 
-#mainContent .rightNav .button .submit, .solspace_ui_wrapper .button .rightNav .submit {
+#mainContent .solspace_ui_wrapper .button .rightNav .submit, #mainContent .solspace_ui_wrapper .button .submit {
 	@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 10%)) !important);
 	border: 1px solid darken($primaryColor, 14%) !important;
 	@include border-radius(2px !important);
@@ -86,5 +86,15 @@
 	 	@include background(linear-gradient(top, lighten($primaryColor, .01%), $primaryColor) !important);
 	 	color: $white !important;
 		text-decoration: none !important;
+	}
+}
+
+#forum_global_nav .submit {
+	margin-bottom: 5px !important;
+}
+
+#mainContent .field_editor {
+	input {
+		color: $nearBlack !important;
 	}
 }

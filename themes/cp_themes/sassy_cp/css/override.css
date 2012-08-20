@@ -230,7 +230,7 @@ Legal: © 2012 Cotter Interactive.
   color: #243038 !important;
 }
 
-#mainContent input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit, #upload_form .submit, .submit#upload_file, #rte_toolset_editor_modal .submit {
+#mainContent input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit, #upload_form .submit, .submit#upload_file, #rte_toolset_editor_modal .submit, .submit {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04b8f7), color-stop(100%, #026e93)) !important;
   background: -webkit-linear-gradient(top, #04b8f7, #026e93) !important;
   background: -moz-linear-gradient(top, #04b8f7, #026e93) !important;
@@ -250,7 +250,7 @@ Legal: © 2012 Cotter Interactive.
   padding: 5px 20px;
   text-align: center;
 }
-#mainContent input.submit:hover, input#edit_file:hover, input#edit_image:hover, button[type="button"]:hover, a#edit_file:hover, a#edit_image:hover, a.submit:hover, #upload_form .submit:hover, .submit#upload_file:hover, #rte_toolset_editor_modal .submit:hover {
+#mainContent input.submit:hover, input#edit_file:hover, input#edit_image:hover, button[type="button"]:hover, a#edit_file:hover, a#edit_image:hover, a.submit:hover, #upload_form .submit:hover, .submit#upload_file:hover, #rte_toolset_editor_modal .submit:hover, .submit:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0393c5), color-stop(100%, #0393c5)) !important;
   background: -webkit-linear-gradient(top, #0393c5, #0393c5) !important;
   background: -moz-linear-gradient(top, #0393c5, #0393c5) !important;
@@ -273,7 +273,7 @@ Legal: © 2012 Cotter Interactive.
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), inset 0px 0px 2px rgba(87, 87, 87, 0.7);
 }
 
-#mainContent .button .submit, #action_nav li a:link, #action_nav li a:visited, #tools .submit, #noticeContents .submit, .cp_button a, #autosaved_entries {
+#mainContent .button .submit, #action_nav li a:link, #action_nav li a:visited, #tools .submit, #noticeContents .submit, .cp_button a, #autosaved_entries, #mainContent .rightNav .button .submit[title="View Rendered Template"], #forum_global_nav .submit {
   background: white;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d9d9d9)) !important;
   background: -webkit-linear-gradient(top, #ffffff, #d9d9d9) !important;
@@ -296,7 +296,7 @@ Legal: © 2012 Cotter Interactive.
   text-align: center;
   text-decoration: none;
 }
-#mainContent .button .submit:hover, #action_nav li a:link:hover, #action_nav li a:visited:hover, #tools .submit:hover, #noticeContents .submit:hover, .cp_button a:hover, #autosaved_entries:hover {
+#mainContent .button .submit:hover, #action_nav li a:link:hover, #action_nav li a:visited:hover, #tools .submit:hover, #noticeContents .submit:hover, .cp_button a:hover, #autosaved_entries:hover, #mainContent .rightNav .button .submit[title="View Rendered Template"]:hover, #forum_global_nav .submit:hover {
   background: white !important;
   color: #243038 !important;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
@@ -424,6 +424,24 @@ Legal: © 2012 Cotter Interactive.
 
 .overviewItemName a {
   color: #243038 !important;
+}
+
+#mainContent #template_details {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6a8a9f), color-stop(100%, #425867)) !important;
+  background: -webkit-linear-gradient(top, #6a8a9f, #425867) !important;
+  background: -moz-linear-gradient(top, #6a8a9f, #425867) !important;
+  background: -o-linear-gradient(top, #6a8a9f, #425867) !important;
+  background: linear-gradient(top, #6a8a9f, #425867) !important;
+  -moz-border-radius-topleft: 2px !important;
+  -webkit-border-top-left-radius: 2px !important;
+  border-top-left-radius: 2px !important;
+  -moz-border-radius-topright: 2px !important;
+  -webkit-border-top-right-radius: 2px !important;
+  border-top-right-radius: 2px !important;
+  border: 1px solid #608095 !important;
+}
+#mainContent #template_details p {
+  margin-bottom: 0 !important;
 }
 
 #mainMenu {
@@ -747,14 +765,14 @@ Legal: © 2012 Cotter Interactive.
   color: white !important;
 }
 
-#mainContent .content_tab a:hover {
+#mainContent .pageContents .content_tab a:hover, #mainContent .pageContents #tab_menu_tabs li.content_tab a:hover {
   color: #0393c5 !important;
 }
 
-#mainContent .current a {
+#mainContent .pageContents .current a {
   color: #243038 !important;
 }
-#mainContent .current a:hover {
+#mainContent .pageContents .current a:hover {
   color: #243038 !important;
 }
 
@@ -991,6 +1009,20 @@ table.mainTable thead, table.mainTable thead tr {
   background: white !important;
 }
 
+#mainContent #templateEditor, #mainContent #template_create {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+#mainContent .editAccordion {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6a8a9f), color-stop(100%, #425867)) !important;
+  background: -webkit-linear-gradient(top, #6a8a9f, #425867) !important;
+  background: -moz-linear-gradient(top, #6a8a9f, #425867) !important;
+  background: -o-linear-gradient(top, #6a8a9f, #425867) !important;
+  background: linear-gradient(top, #6a8a9f, #425867) !important;
+}
+
 #mainContent .solspace_ui_wrapper .tab_menu li a {
   color: white !important;
 }
@@ -1037,7 +1069,7 @@ table.mainTable thead, table.mainTable thead tr {
   text-decoration: none !important;
 }
 
-#mainContent .rightNav .button .submit, .solspace_ui_wrapper .button .rightNav .submit {
+#mainContent .solspace_ui_wrapper .button .rightNav .submit, #mainContent .solspace_ui_wrapper .button .submit {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04b8f7), color-stop(100%, #026e93)) !important;
   background: -webkit-linear-gradient(top, #04b8f7, #026e93) !important;
   background: -moz-linear-gradient(top, #04b8f7, #026e93) !important;
@@ -1057,7 +1089,7 @@ table.mainTable thead, table.mainTable thead tr {
   padding: 5px 20px;
   text-align: center;
 }
-#mainContent .rightNav .button .submit:hover, .solspace_ui_wrapper .button .rightNav .submit:hover {
+#mainContent .solspace_ui_wrapper .button .rightNav .submit:hover, #mainContent .solspace_ui_wrapper .button .submit:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0393c5), color-stop(100%, #0393c5)) !important;
   background: -webkit-linear-gradient(top, #0393c5, #0393c5) !important;
   background: -moz-linear-gradient(top, #0393c5, #0393c5) !important;
@@ -1111,4 +1143,12 @@ table.mainTable thead, table.mainTable thead tr {
   background: linear-gradient(top, #0393c5, #0393c5) !important;
   color: white !important;
   text-decoration: none !important;
+}
+
+#forum_global_nav .submit {
+  margin-bottom: 5px !important;
+}
+
+#mainContent .field_editor input {
+  color: #243038 !important;
 }
