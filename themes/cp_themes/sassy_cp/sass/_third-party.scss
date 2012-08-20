@@ -98,3 +98,17 @@
 		color: $nearBlack !important;
 	}
 }
+
+#accessoryTabs li#devot-ee-accessory-tab.updates-available a {
+    background-image: url(../images/icon-warning.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    margin-right: -10px;
+    padding-right: 40px !important;
+}
+
+#accessoryTabs li#devot-ee-accessory-tab.updates-available {
+	.accessoryHandle {
+		display: none !important;
+	}
+}
