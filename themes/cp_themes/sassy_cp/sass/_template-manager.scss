@@ -1,0 +1,120 @@
+#templates, #templateGroups {
+
+	.groupList, .templateGrouping {
+		background: darken($templateGrey, 10%) !important;
+	}
+
+	.formHeading {
+		@include background(linear-gradient(top, lighten($nearBlack, 34%), lighten($nearBlack, 15%)) !important);
+	}
+}
+
+#mainContent {
+	.templateEditorTop {
+		background: lighten($primaryGrey, 15%) !important;
+		margin-bottom: 15px;
+
+		h2 {
+			color: $white;
+			font-size: 18px !important;
+			@include text-shadow(#000 0 -1px 0);
+			
+			span {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.formArea {
+		@include border-radius(2px !important);
+		@include box-shadow(0px 1px 3px rgba(000,000,000,0.5) !important);
+	}
+}
+
+#mainContent .formArea .formHeading .newTemplate {
+	@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 10%)) !important);
+	border: 1px solid darken($primaryColor, 14%) !important;
+	@include border-radius(2px !important);
+	@include box-shadow(0px 1px 1px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(087,087,087,0.7));
+	color: $white !important;
+	font-size: 11px !important;
+	margin: -2px auto 0 auto;
+	text-align: center;
+
+	 &:hover a {
+	 	@include background(linear-gradient(top, lighten($primaryColor, .01%), $primaryColor) !important);
+	 	color: $white !important;
+		text-decoration: none !important;
+	}
+}
+
+.defaultGroupName, .defaultIndicator {
+	color: $primaryColor !important;
+}
+
+#templates {
+	td a {
+		background: $white;
+		@include background(linear-gradient(top, $white, darken($white, 15%)) !important);
+		border: 1px solid darken($white, 14%) !important;
+	 	@include border-radius(2px !important);
+		@include box-shadow(0px 1px 1px rgba(000,000,000,0.5));
+		color: $nearBlack !important;
+		font-size: 11px;
+		margin: 0 auto;
+		padding: 3px 9px;
+		text-align: center;
+		text-decoration: none;
+ 
+		 &:hover {
+			background: lighten($white, .01%) !important;
+			color: $nearBlack !important;
+			@include background(linear-gradient(top, lighten($white, .01%), $white));
+		 	text-decoration: none !important;
+		}
+	}
+	
+	.templateName a {
+		background: none !important;
+		border: none !important;
+		@include border-radius(none !important);
+		@include box-shadow(none !important);
+		color: $nearBlack !important;
+		font-weight: bold;
+		@include text-shadow(none !important);						
+	}
+	
+	.cellRight {
+		
+		a {
+			background: $deleteRed;
+			@include background(linear-gradient(top, $deleteRed, darken($deleteRed, 20%)) !important);
+			border: 1px solid darken($deleteRed, 14%) !important;
+		 	@include border-radius(2px !important);
+			@include box-shadow(0px 1px 1px rgba(000,000,000,0.5));
+			color: $white !important;
+			font-size: 11px;
+			margin: 0 auto;
+			padding: 3px 9px;
+			text-align: center;
+			text-decoration: none;
+	 
+			 &:hover {
+				background: darken($deleteRed, 5%) !important;
+				color: $white !important;
+				@include background(linear-gradient(top, darken($deleteRed, 5%), $deleteRed));
+			 	text-decoration: none !important;
+			}
+		}
+	}
+}
+
+.templateTable tr.accessRowHeader td {
+	border-left: none !important;
+	border-right: none !important;
+	border-bottom: none !important;
+}
+
+.templateTable tr.accessRowHeader td .accessTable th, .templateTable tr.accessRowHeader td .accessTable td {
+	background: lighten($offWhite, 20%) !important;
+}

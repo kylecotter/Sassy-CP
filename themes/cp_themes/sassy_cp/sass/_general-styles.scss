@@ -6,6 +6,20 @@
 	display: none;
 }
 
+// Linkadinks
+
+#mainContent a {
+	&:hover {
+		color: $primaryColor !important;
+	}
+}
+
+.pageContents {
+	a {
+		color: $primaryColor !important;
+	}
+}
+
 // Bradcrumbs
 
 #breadCrumb {
@@ -195,4 +209,24 @@
 			}
 		}
 	}
+}
+
+// Cleanup
+
+.pageContents {
+	border-top: none !important;
+}
+
+// The My Account Page - AKA The page where the submit button is randomly placed in different positions in each section.
+
+#mainContent #registerUser p.submit {
+	padding-left: 0 !important; // Huzzah for consistency
+}
+
+// Main Table thead 
+
+#mainContent .mainTable caption {
+	@include background(linear-gradient(top, lighten($nearBlack, 34%), lighten($nearBlack, 15%)) !important);
+	@include border-top-radius(2px !important);
+	border: 1px solid lighten($nearBlack, 30%) !important;
 }
