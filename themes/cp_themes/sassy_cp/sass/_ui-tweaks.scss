@@ -1,10 +1,10 @@
 // All the submmity actiony buttonz should look like this
 
-input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit {
-	@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 15%)) !important);
+#mainContent input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit, #upload_form .submit, .submit#upload_file, #rte_toolset_editor_modal .submit {
+	@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 10%)) !important);
 	border: 1px solid darken($primaryColor, 14%) !important;
 	@include border-radius(2px !important);
-	@include box-shadow(0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 4px rgba(087,087,087,0.7));
+	@include box-shadow(0px 1px 1px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(087,087,087,0.7));
 	color: $white !important;
 	margin: 0 auto;
 	padding: 5px 20px;
@@ -12,28 +12,130 @@ input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_f
 
 	 &:hover {
 	 	@include background(linear-gradient(top, lighten($primaryColor, .01%), $primaryColor) !important);
+	 	color: $white !important;
 		text-decoration: none !important;
 	}
 }
 
+.disabled-btn, input.disabled-btn {
+	padding: 5px 20px !important;
+	border: 1px solid darken($white, 1%) !important;
+	@include border-radius(2px !important);
+	@include box-shadow(0px 1px 1px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(087,087,087,0.7));
+}
+
 // All the secondary non-submitty buttons are this nice grey
 
-.button .submit, #action_nav li a:link, #action_nav li a:visited, #tools .submit, #noticeContents .submit, .cp_button a {
+#mainContent .button .submit, #action_nav li a:link, #action_nav li a:visited, #tools .submit, #noticeContents .submit, .cp_button a, #autosaved_entries {
 	background: $white;
-	@include background(linear-gradient(top, $white, darken($white, 20%)) !important);
+	@include background(linear-gradient(top, $white, darken($white, 15%)) !important);
 	border: 1px solid darken($white, 14%) !important;
  	@include border-radius(2px !important);
 	@include box-shadow(0px 1px 1px rgba(000,000,000,0.5));
 	color: $nearBlack !important;
-	font-size: 11px;
+	font-size: 12px;
 	margin: 0 auto;
-	padding: 3px 7px;
+	padding: 5px 9px;
 	text-align: center;
 	text-decoration: none;
 	
 	&:hover {
 		background: lighten($white, .01%) !important;
-	   @include background(linear-gradient(top, lighten($white, .01%), $white));
-	   text-decoration: none !important;
+		color: $nearBlack !important;
+		@include background(linear-gradient(top, lighten($white, .01%), $white));
+	 	text-decoration: none !important;
 	}
+}
+
+#mainContent td:last-child {
+	a.less_important_link {
+		@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 10%)) !important);
+		border: 1px solid darken($primaryColor, 14%) !important;
+		@include border-radius(2px !important);
+		@include box-shadow(0px 1px 1px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(087,087,087,0.7));
+		color: $white !important;
+		display: block;
+		font-size: 11px;
+		margin: 0 auto;
+		padding: 5px;
+		text-align: center;
+		text-decoration: none !important;
+		@include text-shadow(#253117 .1px -1px .1px);
+		width: 50px !important;
+
+		&[title="Member Groups"] {
+			margin: 10px 0 !important;
+			width: 100px !important;
+		}
+
+		&[title="Uninstall"], &[title="Remove"] {
+			@include background(linear-gradient(top, $deleteRed, darken($deleteRed, 20%)) !important);
+			border: 1px solid darken($deleteRed, 14%) !important;
+
+			&:hover {
+				@include background(linear-gradient(top, lighten($deleteRed, 10%), darken($deleteRed, 10%)) !important);
+			}
+		}
+
+		 &:hover {
+		 	@include background(linear-gradient(top, lighten($primaryColor, .01%), $primaryColor) !important);
+		 	color: $white !important;
+			text-decoration: none !important;
+		}
+	}
+}
+
+#mainContent .submit[value="Delete Selected Members"] {
+	@include background(linear-gradient(top, $deleteRed, darken($deleteRed, 20%)) !important);
+	border: 1px solid darken($deleteRed, 14%) !important;
+	color: $white !important;
+	text-decoration: none !important;
+
+	&:hover {
+		@include background(linear-gradient(top, lighten($deleteRed, 10%), darken($deleteRed, 10%)) !important);
+	}
+}
+
+#mainContent #action_nav {
+
+	margin-right: 0 !important;
+
+	.button .submit.upload_file, .create_new_wm_pref {
+		text-shadow: none !important;
+		margin-top: -2px !important;
+		margin-right: 0 !important;
+
+		&:hover {
+			background: lighten($white, .01%) !important;
+			color: $nearBlack !important;
+			@include background(linear-gradient(top, lighten($white, .01%), $white));
+	 		text-decoration: none !important;
+		}
+	}
+}
+
+#mainContent table.mainTable td span.go_notice {
+	color: $nearBlack !important;
+}
+
+#mainContent table.mainTable td span.notice {
+	color: grey !important;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br, .ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl, .ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr, .ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl {
+	@include border-radius(2px !important);
+}
+
+#file_browser_body {
+	div a {
+		color: $primaryColor !important;
+	}
+}
+
+#mainContent #create_toolset:hover {
+	color: $white !important;
+}
+
+.overviewItemName a {
+	color: $nearBlack !important;
 }

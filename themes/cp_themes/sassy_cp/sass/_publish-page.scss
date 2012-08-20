@@ -1,0 +1,226 @@
+.heading {
+	background: lighten($primaryGrey, 15%) !important;
+	@include border-top-radius(2px !important);
+	@include box-shadow(0px 1px 6px rgba(000,000,000,0.5) !important);
+	@include box-sizing(border-box !important);
+	@include background-clip();
+	
+	h2 {
+		background-image: none !important;
+		font-size: 18px !important;
+		padding: 8px !important;
+		@include text-shadow(#000 0 -1px 0);
+		
+		span {
+			font-size: 14px;
+		}
+	}
+}
+
+.overview {
+	@include box-shadow(0px 1px 3px rgba(000,000,000,0.5) !important);
+	@include border-radius(2px !important);
+	@include background-clip();
+
+	.header {
+		@include box-shadow(none !important);
+		@include border-top-radius(2px !important);
+	}
+
+	.mainTable {
+		td {
+
+			&:first-child {
+				border-left: none !important;
+			}
+
+			&:last-child {
+				border-left: 1px solid #D0D7DF !important;
+				border-right: none !important;
+			}
+		}
+	}
+
+	.tableFooter {
+		@include border-bottom-radius(2px !important);
+	}
+}
+
+.contents .pageContents {
+	@include box-shadow(0px 1px 3px rgba(000,000,000,0.5) !important);
+	@include border-bottom-radius(2px !important);
+	@include background-clip();
+}
+
+// LOAD MY BUTTONS NOT THE DEFAULT YOU SILLY CP
+
+#mainContent #tools li a.field_selector, #mainContent #publish_tab_list li a.menu_focus {
+	background: url(../images/content_custom_tab_edit.png) no-repeat scroll left bottom !important;
+}
+
+#mainContent #publishForm .tab_menu li.addTabButton a {
+	color: $primaryColor !important;
+}
+
+.required {
+	color: $primaryColor !important;
+}
+
+.markItUp .btn_b a, .markItUp .btn_strong a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -85px 0;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_i a, .markItUp .btn_em a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -175px 0;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_s a, .markItUp .btn_strike a, .markItUp .btn_del a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -131px 0;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_ins a, .markItUp .btn_insert a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -198px 0;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_ul a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -107px -21px;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_ol a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -198px -21px;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_li a, .markItUp .btn_indent a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -107px 0;
+	text-indent:-10000px;
+	border:0!important;
+	background-color: transparent;
+	width: 19px;
+}
+.markItUp .btn_p a, .markItUp .btn_paragraph a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -221px 0;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_blockquote a, .markItUp .btn_bq a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -85px -21px;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_h1 a, .markItUp .btn_heading1 a, .markItUp .btn_headingone a {
+	width: 25px;
+	background: transparent url(../images/formatting_buttons.png) no-repeat 0 0;
+	text-indent:-10000px;
+	border:0!important;
+}
+.markItUp .btn_h2 a, .markItUp .btn_heading2 a, .markItUp .btn_headingtwo a {
+	width: 25px;
+	background: transparent url(../images/formatting_buttons.png) no-repeat -27px 0;
+	text-indent:-10000px;
+	border:0!important;
+}
+.markItUp .btn_h3 a, .markItUp .btn_heading3 a, .markItUp .btn_headingthree a {
+	width: 25px;
+	background: transparent url(../images/formatting_buttons.png) no-repeat -54px 0;
+	text-indent:-10000px;
+	border:0!important;
+}
+.markItUp .btn_h4 a, .markItUp .btn_heading4 a, .markItUp .btn_headingfour a {
+	width: 25px;
+	background: transparent url(../images/formatting_buttons.png) no-repeat 0 -21px;
+	text-indent:-10000px;
+	border:0!important;
+}
+.markItUp .btn_h5 a, .markItUp .btn_heading5 a, .markItUp .btn_headingfive a {
+	width: 25px;
+	background: transparent url(../images/formatting_buttons.png) no-repeat -27px -21px;
+	text-indent:-10000px;
+	border:0!important;
+}
+.markItUp .btn_h6 a, .markItUp .btn_heading6 a, .markItUp .btn_headingsix a {
+	width: 25px;
+	background: transparent url(../images/formatting_buttons.png) no-repeat -54px -21px;
+	text-indent:-10000px;
+	border:0!important;
+}
+.markItUp .btn_a a, .markItUp .btn_link a, .markItUp .btn_anchor a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -153px 0;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_img a, .markItUp .btn_image a, .markItUp .btn_graphic a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -175px -21px;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+.markItUp .btn_separator a {
+	background-image:url(../images/publish_separator.gif);
+	text-indent:-10000px;
+	border:0!important;
+	background-color: transparent;
+	width: 19px;
+}
+.markItUp .btn_plus a {
+	background: transparent url(../images/formatting_buttons.png) no-repeat -132px -21px;
+	text-indent:-10000px;
+	border:0!important;
+	width: 19px;
+}
+
+// What unnecessary styling. Lé Sigh.
+
+// This has been really annoying. I'm fixing it.
+
+.WysiHat-container {
+	margin-top: 5px !important;
+}
+
+#publish a, #sub_hold_field_category a.edit_categories_link {
+	color: $primaryColor !important;
+}
+
+#mainContent #tools li a {
+	&:hover {
+		font-weight: normal !important;
+	}
+}
+
+#mainContent #tools h3 a {
+	&:hover {
+		color: $white !important;
+	}
+}
+
+#mainContent .content_tab {
+	a {
+		&:hover {
+			color: $primaryColor !important;
+		}
+	}
+}
+
+#mainContent .current {
+	a {
+		color: $nearBlack !important;
+
+		&:hover {
+			color: $nearBlack !important;
+		}
+	}
+}
