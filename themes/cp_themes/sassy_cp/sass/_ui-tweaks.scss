@@ -1,6 +1,6 @@
 // All the submmity actiony buttonz should look like this
 
-#mainContent input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit, #upload_form .submit, .submit#upload_file, #rte_toolset_editor_modal .submit {
+#mainContent input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit, #upload_form .submit, .submit#upload_file, #rte_toolset_editor_modal .submit, .submit {
 	@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 10%)) !important);
 	border: 1px solid darken($primaryColor, 14%) !important;
 	@include border-radius(2px !important);
@@ -26,7 +26,7 @@
 
 // All the secondary non-submitty buttons are this nice grey
 
-#mainContent .button .submit, #action_nav li a:link, #action_nav li a:visited, #tools .submit, #noticeContents .submit, .cp_button a, #autosaved_entries {
+#mainContent .button .submit, #action_nav li a:link, #action_nav li a:visited, #tools .submit, #noticeContents .submit, .cp_button a, #autosaved_entries, #mainContent .rightNav .button .submit[title="View Rendered Template"], #forum_global_nav .submit {
 	background: $white;
 	@include background(linear-gradient(top, $white, darken($white, 15%)) !important);
 	border: 1px solid darken($white, 14%) !important;
@@ -138,4 +138,14 @@
 
 .overviewItemName a {
 	color: $nearBlack !important;
+}
+
+#mainContent #template_details {
+	@include background(linear-gradient(top, lighten($nearBlack, 34%), lighten($nearBlack, 15%)) !important);
+	@include border-top-radius(2px !important);
+	border: 1px solid lighten($nearBlack, 30%) !important;
+
+	p {
+		margin-bottom: 0 !important;
+	}
 }

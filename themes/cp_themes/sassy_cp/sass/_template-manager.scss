@@ -118,3 +118,11 @@
 .templateTable tr.accessRowHeader td .accessTable th, .templateTable tr.accessRowHeader td .accessTable td {
 	background: lighten($offWhite, 20%) !important;
 }
+
+#mainContent #templateEditor, #mainContent #template_create {
+	@include box-shadow(none !important);
+}
+
+#mainContent .editAccordion {
+	@include background(linear-gradient(top, lighten($nearBlack, 34%), lighten($nearBlack, 15%)) !important);
+}

@@ -1,0 +1,100 @@
+// Sassy CP strives to be as universal as possible.
+// Which includes third party add-ons.
+// So...let's sass some third_party add-ons. Woot woot!
+
+// Solspace Awesomesauce
+
+#mainContent .solspace_ui_wrapper .tab_menu li a {
+	color: $white !important;
+
+	&:hover {
+		color: $white !important;
+	}
+}
+
+#freeform_preferences p {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+
+#submit_holder input[value="Delete"] {
+	background: $deleteRed;
+	@include background(linear-gradient(top, $deleteRed, darken($deleteRed, 20%)) !important);
+	border: 1px solid darken($deleteRed, 14%) !important;
+ 	@include border-radius(2px !important);
+	@include box-shadow(0px 1px 1px rgba(000,000,000,0.5));
+	color: $white !important;
+	font-size: 11px;
+	margin: 0 auto;
+	padding: 7px 12px;
+	text-align: center;
+	text-decoration: none;
+
+	 &:hover {
+		background: darken($deleteRed, 5%) !important;
+		color: $white !important;
+		@include background(linear-gradient(top, darken($deleteRed, 5%), $deleteRed));
+	 	text-decoration: none !important;
+	}
+}
+
+#mainContent .solspace_ui_wrapper .button .rightNav .submit, #mainContent .solspace_ui_wrapper .button .submit {
+	@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 10%)) !important);
+	border: 1px solid darken($primaryColor, 14%) !important;
+	@include border-radius(2px !important);
+	@include box-shadow(0px 1px 1px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(087,087,087,0.7));
+	color: $white !important;
+	margin: 2px auto 0 auto;
+	padding: 5px 20px;
+	text-align: center;
+
+	 &:hover {
+	 	@include background(linear-gradient(top, lighten($primaryColor, .01%), $primaryColor) !important);
+	 	color: $white !important;
+		text-decoration: none !important;
+	}
+}
+
+#mainContent .solspace_ui_wrapper #freeform_form .form_submissions a, #mainContent .solspace_ui_wrapper #freeform_form .form_moderate a {
+	color: #5F6C74 !important;
+}
+
+.solspace_ui_wrapper #go_pro_button {
+	color: $nearBlack !important;
+
+	&:hover {
+		color: darken($nearBlack, 10%) !important;
+	}
+}
+
+.solspace_ui_wrapper .submit_block {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+
+#mainContent .solspace_ui_wrapper button.submit, .solspace_ui_wrapper #field_layout_submit {
+	@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 10%)) !important);
+	border: 1px solid darken($primaryColor, 14%) !important;
+	@include border-radius(2px !important);
+	@include box-shadow(0px 1px 1px rgba(000,000,000,0.5), inset 0px 0px 2px rgba(087,087,087,0.7));
+	color: $white !important;
+	margin: 2px auto 0 auto;
+	padding: 5px 20px;
+	text-align: center;
+
+	 &:hover {
+	 	@include background(linear-gradient(top, lighten($primaryColor, .01%), $primaryColor) !important);
+	 	color: $white !important;
+		text-decoration: none !important;
+	}
+}
+
+#forum_global_nav .submit {
+	margin-bottom: 5px !important;
+}
+
+#mainContent .field_editor {
+	input {
+		color: $nearBlack !important;
+	}
+}
