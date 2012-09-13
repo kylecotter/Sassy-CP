@@ -54,6 +54,7 @@ Screenshots
 
 Changelog
 -------
+* v.2.0.1 - Fixed compatibility with certain third-party add-ons.
 * v2.0.0 - Rewritten styles, custom configuration via SASS, more compact styles. Full compatibility with popular third-party add-ons.
 * v1.2.1 - Fixed an instance of pink that would display on Wygwam configuration page.
 * v1.2.0 - Added a login.css for the main admin login screen. Enhancements on the category page, various modals, and tweaks for ExpressionEngine 2.4 compatibility.
