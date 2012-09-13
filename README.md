@@ -65,6 +65,6 @@ Changelog
 Credits
 -------
 
-Created by Kyle Cotter.
+Created by Kyle Cotter. Licensed under <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>.
 
 Check out <a href="http://eehash.com">EE Hash</a> for the latest ExpressionEngine news and <a href="http://cotterinteractive.com">Cotter Interactive</a>.
