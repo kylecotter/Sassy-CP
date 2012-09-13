@@ -1161,3 +1161,55 @@ table.mainTable thead, table.mainTable thead tr {
 #accessoryTabs li#devot-ee-accessory-tab.updates-available .accessoryHandle {
   display: none !important;
 }
+
+#test_settings, #umenu ul li a {
+  padding: 3px 10px !important;
+  margin-top: -2px;
+  font-size: 11px !important;
+  font-weight: normal !important;
+  background: white;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d9d9d9)) !important;
+  background: -webkit-linear-gradient(top, #ffffff, #d9d9d9) !important;
+  background: -moz-linear-gradient(top, #ffffff, #d9d9d9) !important;
+  background: -o-linear-gradient(top, #ffffff, #d9d9d9) !important;
+  background: linear-gradient(top, #ffffff, #d9d9d9) !important;
+  border: 1px solid #dbdbdb !important;
+  -webkit-border-radius: 2px !important;
+  -moz-border-radius: 2px !important;
+  -ms-border-radius: 2px !important;
+  -o-border-radius: 2px !important;
+  border-radius: 2px !important;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  color: #243038 !important;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: none;
+}
+#test_settings:hover, #umenu ul li a:hover {
+  background: white !important;
+  color: #243038 !important;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background: -o-linear-gradient(top, #ffffff, #ffffff);
+  background: linear-gradient(top, #ffffff, #ffffff);
+  text-decoration: none !important;
+}
+
+#umenu ul li.current a {
+  background: white !important;
+  color: #243038 !important;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+  background: -moz-linear-gradient(top, #ffffff, #ffffff);
+  background: -o-linear-gradient(top, #ffffff, #ffffff);
+  background: linear-gradient(top, #ffffff, #ffffff);
+  text-decoration: none !important;
+}
+
+#umenu ul li a {
+  padding: 5px 10px !important;
+  text-transform: capitalize !important;
+}
