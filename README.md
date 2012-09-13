@@ -47,9 +47,10 @@ If you are using a version prior to v.1.1.0, where Sassy CP is no its own theme,
 Screenshots
 -----------
 
-* Control Panel Home Page - http://d.pr/q7nL
-* Template Manager - http://d.pr/QPVj
-* Edit Channel Entries Page -http://d.pr/X8X4
+* Easy skinning <img src="http://cl.ly/IbPq/Screen%20Shot%202012-08-07%20at%2011.34.01%20PM.png">
+* Control Panel Home Page <img src="http://cl.ly/JRdZ/Screen%20Shot%202012-09-12%20at%209.16.51%20PM.png"> 
+* Template Manager <img src="http://cl.ly/JQD0/Screen%20Shot%202012-09-12%20at%209.18.33%20PM.png">
+* Edit Channel Entries Page <img src="http://cl.ly/JQT2/Screen%20Shot%202012-09-12%20at%209.19.08%20PM.png">
 
 Changelog
 -------
