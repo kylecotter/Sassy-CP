@@ -230,13 +230,13 @@ Legal: © 2012 Cotter Interactive.
   color: #243038 !important;
 }
 
-#mainContent input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit, #upload_form .submit, .submit#upload_file, #rte_toolset_editor_modal .submit, .submit {
+#mainContent input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit, #upload_form .submit, .submit#upload_file, #rte_toolset_editor_modal .submit, a.submit, input.submit {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #04b8f7), color-stop(100%, #026e93)) !important;
   background: -webkit-linear-gradient(top, #04b8f7, #026e93) !important;
   background: -moz-linear-gradient(top, #04b8f7, #026e93) !important;
   background: -o-linear-gradient(top, #04b8f7, #026e93) !important;
   background: linear-gradient(top, #04b8f7, #026e93) !important;
-  border: 1px solid #025f7f !important;
+  border: 1px solid #026e93 !important;
   -webkit-border-radius: 2px !important;
   -moz-border-radius: 2px !important;
   -ms-border-radius: 2px !important;
@@ -250,7 +250,7 @@ Legal: © 2012 Cotter Interactive.
   padding: 5px 20px;
   text-align: center;
 }
-#mainContent input.submit:hover, input#edit_file:hover, input#edit_image:hover, button[type="button"]:hover, a#edit_file:hover, a#edit_image:hover, a.submit:hover, #upload_form .submit:hover, .submit#upload_file:hover, #rte_toolset_editor_modal .submit:hover, .submit:hover {
+#mainContent input.submit:hover, input#edit_file:hover, input#edit_image:hover, button[type="button"]:hover, a#edit_file:hover, a#edit_image:hover, a.submit:hover, #upload_form .submit:hover, .submit#upload_file:hover, #rte_toolset_editor_modal .submit:hover, a.submit:hover, input.submit:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0393c5), color-stop(100%, #0393c5)) !important;
   background: -webkit-linear-gradient(top, #0393c5, #0393c5) !important;
   background: -moz-linear-gradient(top, #0393c5, #0393c5) !important;
@@ -765,15 +765,12 @@ Legal: © 2012 Cotter Interactive.
   color: white !important;
 }
 
-#mainContent .pageContents .content_tab a:hover, #mainContent .pageContents #tab_menu_tabs li.content_tab a:hover {
-  color: #0393c5 !important;
+#mainContent .tab_menu li.current a:hover {
+  color: #445058 !important;
 }
 
-#mainContent .pageContents .current a {
-  color: #243038 !important;
-}
-#mainContent .pageContents .current a:hover {
-  color: #243038 !important;
+#mainContent .tab_menu li a:hover {
+  color: white !important;
 }
 
 table.mainTable .headerSortUp {

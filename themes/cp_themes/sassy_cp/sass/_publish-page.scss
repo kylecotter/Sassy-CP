@@ -207,20 +207,10 @@
 	}
 }
 
-#mainContent .pageContents .content_tab, #mainContent .pageContents #tab_menu_tabs li.content_tab {
-	a {
-		&:hover {
-			color: $primaryColor !important;
-		}
-	}
+#mainContent .tab_menu li.current a:hover {
+	color: #445058 !important;
 }
 
-#mainContent .pageContents .current {
-	a {
-		color: $nearBlack !important;
-
-		&:hover {
-			color: $nearBlack !important;
-		}
-	}
+#mainContent .tab_menu li a:hover {
+	color: $white !important;
 }
