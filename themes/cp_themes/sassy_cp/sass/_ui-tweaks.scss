@@ -1,6 +1,6 @@
 // All the submmity actiony buttonz should look like this
 
-#mainContent input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit, #upload_form .submit, .submit#upload_file, #rte_toolset_editor_modal .submit, a.submit, input.submit {
+#mainContent input.submit, input#edit_file, input#edit_image, button[type="button"], a#edit_file, a#edit_image, a.submit, #upload_form .submit, .submit#upload_file, #rte_toolset_editor_modal .submit, a.submit, input.submit, button.submit {
 	@include background(linear-gradient(top, lighten($primaryColor, 10%), darken($primaryColor, 10%)) !important);
 	border: 1px solid darken($primaryColor, 10%) !important;
 	@include border-radius(2px !important);
