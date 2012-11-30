@@ -11,7 +11,8 @@
 
 	// Styling of main top level nav
 	> li {
-		margin: 0 5px;
+		margin: 0 5px 5px 5px;
+		padding-bottom: 5px;
 
 		> a {
 			background: $mainNavLinkBg !important;
