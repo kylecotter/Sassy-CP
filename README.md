@@ -54,6 +54,8 @@ Screenshots
 
 Changelog
 -------
+* v.2.0.4 - Fixed height bug with main nav.
+* v.2.0.3 - Third-party bug fix. (Zoo Flexible Admin)
 * v.2.0.2 - Added a series of pre-compiled themes.
 * v.2.0.1 - Fixed compatibility with certain third-party add-ons.* 
 * v2.0.0 - Rewritten styles, custom configuration via SASS, more compact styles. Full compatibility with popular third-party add-ons.
