@@ -1,8 +1,9 @@
+@charset "UTF-8";
 /*
 
 Theme: Sassy CP
 Description: An override for the ExpressionEngine Control Panel. It makes it prettier. And Sassy-ier.
-Version: 2.0.4
+Version: 2.0.5
 Author: Cotter Interactive
 Legal: Developed by Cotter Interactive. Licensed under Creative Commons Attribution 3.0.
 
@@ -444,6 +445,23 @@ Legal: Developed by Cotter Interactive. Licensed under Creative Commons Attribut
   margin-bottom: 0 !important;
 }
 
+.WysiHat-editor-toolbar .button,
+.WysiHat-ui-control .button {
+  background: #fff !important;
+  border: 1px solid #dce4e8 !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.WysiHat-editor-toolbar .button:hover,
+.WysiHat-editor-toolbar .button:focus,
+.WysiHat-editor-toolbar .button:active {
+  background: #fff !important;
+  border-color: #a4b7c3 !important;
+  color: #445762 !important;
+}
+
 #mainMenu {
   background: #27343c;
 }
@@ -619,49 +637,49 @@ Legal: Developed by Cotter Interactive. Licensed under Creative Commons Attribut
 .markItUp .btn_b a, .markItUp .btn_strong a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -85px 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
 .markItUp .btn_i a, .markItUp .btn_em a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -175px 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
 .markItUp .btn_s a, .markItUp .btn_strike a, .markItUp .btn_del a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -131px 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
 .markItUp .btn_ins a, .markItUp .btn_insert a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -198px 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
 .markItUp .btn_ul a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -107px -21px;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
 .markItUp .btn_ol a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -198px -21px;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
 .markItUp .btn_li a, .markItUp .btn_indent a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -107px 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   background-color: transparent;
   width: 19px;
 }
@@ -669,14 +687,14 @@ Legal: Developed by Cotter Interactive. Licensed under Creative Commons Attribut
 .markItUp .btn_p a, .markItUp .btn_paragraph a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -221px 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
 .markItUp .btn_blockquote a, .markItUp .btn_bq a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -85px -21px;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
@@ -684,62 +702,62 @@ Legal: Developed by Cotter Interactive. Licensed under Creative Commons Attribut
   width: 25px;
   background: transparent url(../images/formatting_buttons.png) no-repeat 0 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
 }
 
 .markItUp .btn_h2 a, .markItUp .btn_heading2 a, .markItUp .btn_headingtwo a {
   width: 25px;
   background: transparent url(../images/formatting_buttons.png) no-repeat -27px 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
 }
 
 .markItUp .btn_h3 a, .markItUp .btn_heading3 a, .markItUp .btn_headingthree a {
   width: 25px;
   background: transparent url(../images/formatting_buttons.png) no-repeat -54px 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
 }
 
 .markItUp .btn_h4 a, .markItUp .btn_heading4 a, .markItUp .btn_headingfour a {
   width: 25px;
   background: transparent url(../images/formatting_buttons.png) no-repeat 0 -21px;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
 }
 
 .markItUp .btn_h5 a, .markItUp .btn_heading5 a, .markItUp .btn_headingfive a {
   width: 25px;
   background: transparent url(../images/formatting_buttons.png) no-repeat -27px -21px;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
 }
 
 .markItUp .btn_h6 a, .markItUp .btn_heading6 a, .markItUp .btn_headingsix a {
   width: 25px;
   background: transparent url(../images/formatting_buttons.png) no-repeat -54px -21px;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
 }
 
 .markItUp .btn_a a, .markItUp .btn_link a, .markItUp .btn_anchor a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -153px 0;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
 .markItUp .btn_img a, .markItUp .btn_image a, .markItUp .btn_graphic a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -175px -21px;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 
 .markItUp .btn_separator a {
   background-image: url(../images/publish_separator.gif);
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   background-color: transparent;
   width: 19px;
 }
@@ -747,7 +765,7 @@ Legal: Developed by Cotter Interactive. Licensed under Creative Commons Attribut
 .markItUp .btn_plus a {
   background: transparent url(../images/formatting_buttons.png) no-repeat -132px -21px;
   text-indent: -10000px;
-  border: 0!important;
+  border: 0 !important;
   width: 19px;
 }
 

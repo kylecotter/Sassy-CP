@@ -54,6 +54,7 @@ Screenshots
 
 Changelog
 -------
+* v.2.0.5 - Button style changes on native ExpressionEngine RTE toolbar.
 * v.2.0.4 - Fixed height bug with main nav.
 * v.2.0.3 - Third-party bug fix. (Zoo Flexible Admin)
 * v.2.0.2 - Added a series of pre-compiled themes.

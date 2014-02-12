@@ -149,3 +149,20 @@
 		margin-bottom: 0 !important;
 	}
 }
+
+.WysiHat-editor-toolbar .button,
+.WysiHat-ui-control .button {
+	background: #fff !important;
+	border: 1px solid #dce4e8 !important;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.WysiHat-editor-toolbar .button:hover,
+.WysiHat-editor-toolbar .button:focus,
+.WysiHat-editor-toolbar .button:active {
+	background: #fff !important;
+	border-color: #a4b7c3 !important;
+	color: #445762 !important;
+}
