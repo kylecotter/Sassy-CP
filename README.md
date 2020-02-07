@@ -1,4 +1,4 @@
-# This repo is no longer being actively developed. Thanks for all the useage over the years! With EE 6 around the corner we're going to archive this repo once that goes live.
+# This repo is no longer being actively developed. Thanks for all the usage over the years! With EE 6 around the corner we're going to archive this repo once that goes live.
 
 Sassy CP
 ==============================================================
